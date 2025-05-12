@@ -5,19 +5,14 @@
     <title>Geri Dön Fonksiyonu</title>
 </head>
 <body>
-    <h1>Geri Dön Fonksiyonu</h1>
-    <pre id="sonuc"></pre>
-
     <script>
         let toplam = 0;
-        let output = "";
 
         function geridon(n) {
             if (n < 1) {
                 return;
             }
             console.log(n);
-            output += n + "\n";
             toplam = toplam + n;
             geridon(n - 1);
         }
@@ -25,9 +20,7 @@
         let n = 100;
         geridon(n);
         console.log("Toplam:", toplam);
-        output += "Toplam: " + toplam;
-
-        document.getElementById("sonuc").textContent = output;
     </script>
 </body>
 </html>
+
